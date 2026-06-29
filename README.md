@@ -6,10 +6,8 @@ Each lesson lives in its own folder and contains:
 
 | File | Purpose |
 |---|---|
-| `README.md` | The deep-dive concept doc — full explanation, diagrams, and worked examples |
+| `README.md` | The deep-dive concept doc — the full lesson: explanation, diagrams, and worked examples |
 | `notebook.ipynb` | A runnable demonstration with minimal prose — the code does the talking |
-| `linkedin-article.md` | A long-form LinkedIn article for the lesson |
-| `linkedin-post.md` | A short LinkedIn post to promote the article |
 
 ---
 
