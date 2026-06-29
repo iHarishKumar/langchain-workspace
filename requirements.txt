@@ -1,0 +1,13 @@
+# Core
+langchain
+langchain-core
+langchain-openai
+langchain-community
+
+# Env + notebooks
+python-dotenv
+jupyter
+ipykernel
+
+# Used in routing (semantic routing via embeddings)
+numpy
