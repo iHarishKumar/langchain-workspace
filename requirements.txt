@@ -4,6 +4,9 @@ langchain-core
 langchain-openai
 langchain-community
 
+# Agents / orchestration (lesson 06 uses langchain.agents.create_agent, built on LangGraph)
+langgraph
+
 # Env + notebooks
 python-dotenv
 jupyter

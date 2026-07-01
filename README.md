@@ -43,12 +43,16 @@ the provider in the setup cell of any notebook (the matching integration package
 | 02 | [Parallelization](02_parallelization/) — concurrent chains with `RunnableParallel` | ✅ |
 | 03 | [Routing](03_routing/) — rule-based and semantic routing | ✅ |
 
+### Orchestration patterns
+| # | Lesson | Status |
+|---|---|---|
+| 04 | [Orchestrator–worker](04_orchestrator_worker/) — a planner delegates subtasks to workers | ✅ |
+| 05 | [Evaluator–optimizer](05_evaluator_optimizer/) — generate → score → refine loop | ✅ |
+| 06 | [Agents and tool calling](06_agents_tool_calling/) — ReAct agents with `create_agent` | ✅ |
+
 ### Coming next
 | # | Lesson |
 |---|---|
-| 04 | Orchestrator–worker |
-| 05 | Evaluator–optimizer |
-| 06 | Agents and tool calling |
 | 07 | Checkpointer vs. store |
 | 08 | Conversation memory patterns |
 | 09 | RAG — naive to advanced |
