@@ -50,15 +50,27 @@ the provider in the setup cell of any notebook (the matching integration package
 | 05 | [Evaluator–optimizer](05_evaluator_optimizer/) — generate → score → refine loop | ✅ |
 | 06 | [Agents and tool calling](06_agents_tool_calling/) — ReAct agents with `create_agent` | ✅ |
 
-### Coming next
-| # | Lesson |
-|---|---|
-| 07 | Checkpointer vs. store |
-| 08 | Conversation memory patterns |
-| 09 | RAG — naive to advanced |
-| 10 | Multi-agent and subgraph patterns |
-| 11 | Streaming and async |
-| 12 | Tracing and evaluation with LangSmith |
+### State & memory
+| # | Lesson | Status |
+|---|---|---|
+| 07 | [Checkpointer vs. store](07_checkpointer_vs_store/) — thread-scoped vs. cross-thread agent memory | ✅ |
+| 08 | [Conversation memory patterns](08_conversation_memory/) — windowing, trimming, summarization | ✅ |
+
+### Retrieval
+| # | Lesson | Status |
+|---|---|---|
+| 09 | [RAG — naive to advanced](09_rag/) — the pipeline, then query rewriting, thresholds, citations | ✅ |
+
+### Scaling up
+| # | Lesson | Status |
+|---|---|---|
+| 10 | [Multi-agent and subgraph patterns](10_multi_agent/) — specialists, supervisors, agents-as-tools | ✅ |
+
+### Production
+| # | Lesson | Status |
+|---|---|---|
+| 11 | [Streaming and async](11_streaming_async/) — feel fast (stream) and be fast (async) | ✅ |
+| 12 | [Tracing and evaluation with LangSmith](12_langsmith/) — see inside, measure quality | ✅ |
 
 ---
 
