@@ -89,7 +89,7 @@ for step in agent.stream({"messages": [("human", "Price of AAPL, times 10?")]},
 
 You'll see the model call `get_stock_price('AAPL')`, observe `$214.30`, then call
 `multiply(214.30, 10)` — **chaining tools it chose itself.** This trace is your primary debugging
-tool (and a preview of [Lesson 12 — LangSmith](../README.md)).
+tool (and a preview of [Lesson 12 — LangSmith](../12_langsmith/)).
 
 ---
 
@@ -151,4 +151,4 @@ wrong. Don't reach for an agent when a `RunnableBranch` would do.
 
 ▶️ **Run it:** open [`notebook.ipynb`](notebook.ipynb) — three tools, tool-chaining, error recovery, and streaming.
 
-**Next:** [07 · Checkpointer vs. store](../README.md) — short-term vs. long-term memory for agents. *(Coming soon.)*
+**Next:** [07 · Checkpointer vs. store](../07_checkpointer_vs_store/) — short-term vs. long-term memory for agents.

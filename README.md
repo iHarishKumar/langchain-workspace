@@ -1,13 +1,23 @@
 # LangChain Workspace
 
-A hands-on tutorial series on building with **LangChain** and **LangGraph** — one lesson per pattern, from foundational prompt chaining all the way to multi-agent systems and production observability.
+Hands-on tutorial series on building with **LangChain** and **LangGraph** — organised as
+*series → lessons*. Every lesson is a folder with a deep-dive `README.md` and a runnable
+`notebook.ipynb` with minimal prose: read the concept, then run the code.
 
-Each lesson lives in its own folder and contains:
+---
 
-| File | Purpose |
-|---|---|
-| `README.md` | The deep-dive concept doc — the full lesson: explanation, diagrams, and worked examples |
-| `notebook.ipynb` | A runnable demonstration with minimal prose — the code does the talking |
+## Series
+
+| # | Series | Lessons | Status |
+|---|---|---|---|
+| 01 | [LangChain Essentials](01_langchain_essentials/) — prompt chaining to multi-agent, memory, RAG, streaming, observability | 12 | ✅ complete |
+| 02 | LangGraph Deep Dive — raw graphs, human-in-the-loop, persistence, durable execution | 10 planned | 🔜 next |
+| 03 | Production RAG — hybrid search, rerankers, RAG evals, serving | outlined | 🗺 |
+| 04 | Agent Evals — trajectory evals, LLM-judge calibration, regression gates | outlined | 🗺 |
+
+📍 Full lesson-by-lesson plans: [**ROADMAP.md**](ROADMAP.md)
+
+**New here? Start with [Series 01, Lesson 01](01_langchain_essentials/01_prompt_chaining/).**
 
 ---
 
@@ -28,59 +38,25 @@ cp .env.example .env             # then edit .env and paste your OpenAI key
 jupyter lab                      # or: jupyter notebook
 ```
 
-All notebooks load credentials from `.env` via `python-dotenv`. Models are created with LangChain's
-provider-agnostic `init_chat_model` / `init_embeddings`, defaulting to OpenAI's `gpt-4o-mini` — swap
-the provider in the setup cell of any notebook (the matching integration package must be installed).
+All notebooks load credentials from the repo-root `.env` via `python-dotenv`. Models are created
+with LangChain's provider-agnostic `init_chat_model` / `init_embeddings`, so you can swap providers
+by editing `.env` — no notebook changes (the matching integration package must be installed).
+
+Optional: add a [LangSmith](https://smith.langchain.com) key to `.env` (see `.env.example`) to get
+tracing for every notebook — introduced in
+[Series 01, Lesson 12](01_langchain_essentials/12_langsmith/).
 
 ---
 
-## Lessons
+## Repository layout
 
-### Foundation patterns
-| # | Lesson | Status |
-|---|---|---|
-| 01 | [Prompt chaining](01_prompt_chaining/) — sequential LLM calls with LCEL | ✅ |
-| 02 | [Parallelization](02_parallelization/) — concurrent chains with `RunnableParallel` | ✅ |
-| 03 | [Routing](03_routing/) — rule-based and semantic routing | ✅ |
-
-### Orchestration patterns
-| # | Lesson | Status |
-|---|---|---|
-| 04 | [Orchestrator–worker](04_orchestrator_worker/) — a planner delegates subtasks to workers | ✅ |
-| 05 | [Evaluator–optimizer](05_evaluator_optimizer/) — generate → score → refine loop | ✅ |
-| 06 | [Agents and tool calling](06_agents_tool_calling/) — ReAct agents with `create_agent` | ✅ |
-
-### State & memory
-| # | Lesson | Status |
-|---|---|---|
-| 07 | [Checkpointer vs. store](07_checkpointer_vs_store/) — thread-scoped vs. cross-thread agent memory | ✅ |
-| 08 | [Conversation memory patterns](08_conversation_memory/) — windowing, trimming, summarization | ✅ |
-
-### Retrieval
-| # | Lesson | Status |
-|---|---|---|
-| 09 | [RAG — naive to advanced](09_rag/) — the pipeline, then query rewriting, thresholds, citations | ✅ |
-
-### Scaling up
-| # | Lesson | Status |
-|---|---|---|
-| 10 | [Multi-agent and subgraph patterns](10_multi_agent/) — specialists, supervisors, agents-as-tools | ✅ |
-
-### Production
-| # | Lesson | Status |
-|---|---|---|
-| 11 | [Streaming and async](11_streaming_async/) — feel fast (stream) and be fast (async) | ✅ |
-| 12 | [Tracing and evaluation with LangSmith](12_langsmith/) — see inside, measure quality | ✅ |
-
----
-
-## Suggested sequencing
-
-| Phase | Lessons | Notes |
-|-------|---------|-------|
-| Foundation | 01 → 02 → 03 | Read in order — each builds on the last |
-| Orchestration | 04 → 05 → 06 | Independent after the foundation |
-| State & memory | 07 + 08 | Best read together |
-| RAG | 09 | Slots in any time after lesson 03 |
-| Multi-agent | 10 | Escalation from lesson 04 |
-| Production | 11 → 12 | Series closer — applies to everything before |
+```
+01_langchain_essentials/       ← series
+   01_prompt_chaining/         ← lesson
+      README.md                ← the concept, in depth
+      notebook.ipynb           ← the demo, runnable top to bottom
+   02_parallelization/
+   ...
+ROADMAP.md                     ← what's planned next
+requirements.txt               ← one environment covers every series
+```
