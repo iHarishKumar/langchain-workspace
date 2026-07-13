@@ -15,8 +15,6 @@ Hands-on tutorial series on building with **LangChain** and **LangGraph** — or
 | 03 | Production RAG — hybrid search, rerankers, RAG evals, serving | outlined | 🗺 |
 | 04 | Agent Evals — trajectory evals, LLM-judge calibration, regression gates | outlined | 🗺 |
 
-📍 Full lesson-by-lesson plans: [**ROADMAP.md**](ROADMAP.md)
-
 **New here? Start with [Series 01, Lesson 01](01_langchain_essentials/01_prompt_chaining/).**
 
 ---
@@ -57,6 +55,26 @@ tracing for every notebook — introduced in
       notebook.ipynb           ← the demo, runnable top to bottom
    02_parallelization/
    ...
-ROADMAP.md                     ← what's planned next
 requirements.txt               ← one environment covers every series
 ```
+
+---
+
+## Follow along & support
+
+- ⭐ **Star this repo** — it helps others find the series.
+- 🔔 **Follow the series on LinkedIn** — a new lesson every Tuesday and Thursday. <!-- TODO: add profile URL -->
+- 📬 **Newsletter** — coming soon: every lesson in your inbox. <!-- TODO: swap in the signup link when live -->
+- 💼 **Team workshops** — hands-on LangChain/LangGraph training for engineering teams: harishkumargunjalli@gmail.com
+
+---
+
+## License
+
+| What | License |
+|---|---|
+| **Code** — notebooks and code snippets | [MIT](LICENSE) — use it anywhere, including at work |
+| **Written content** — lesson READMEs, explanations, diagrams | [CC BY-NC-SA 4.0](LICENSE-CONTENT.md) — share and adapt with attribution, **non-commercial** |
+
+For commercial licensing of the written content (republishing, paid training material), email
+harishkumargunjalli@gmail.com.
