@@ -124,4 +124,4 @@ experiment you run, not a leap of faith. This is the difference between *having*
 
 ---
 
-🏁 **That's the series.** Twelve patterns, one arc: `invoke` → chains → parallel → routing → orchestration → evaluation loops → agents → memory → RAG → multi-agent → performance → observability. The [series README](../README.md) has the full map — and the [roadmap](../../ROADMAP.md) has what's next.
+🏁 **That's the series.** Twelve patterns, one arc: `invoke` → chains → parallel → routing → orchestration → evaluation loops → agents → memory → RAG → multi-agent → performance → observability. The [series README](../README.md) has the full map — and more series are in the works.

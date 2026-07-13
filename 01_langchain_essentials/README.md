@@ -63,6 +63,6 @@ streaming, and observability. Each lesson folder contains:
 | Multi-agent | 10 | Escalation from lesson 04 |
 | Production | 11 → 12 | Series closer — applies to everything before |
 
-**Next series:** [02 · LangGraph Deep Dive](../ROADMAP.md) — everything this series used through
-prebuilts (`create_agent`, checkpointers, subgraphs), rebuilt from raw graphs. See the
-[roadmap](../ROADMAP.md).
+**Next series:** 02 · LangGraph Deep Dive — everything this series used through prebuilts
+(`create_agent`, checkpointers, subgraphs), rebuilt from raw graphs. *In the works — star the repo
+or follow along on LinkedIn to catch it.*
